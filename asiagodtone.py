@@ -16,7 +16,7 @@ bg = bg.convert()
 bg.fill((255,255,255))
 
 #亞統
-image = pg.image.load("C:\\Users\kevin\Desktop\德克斯特.jpg")
+image = pg.image.load("德克斯特.jpg")
 image.convert()
 image = pg.transform.scale(image, (64,64))
 ball = image
