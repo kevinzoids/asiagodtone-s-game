@@ -80,7 +80,7 @@ while running:
                 screen.blit(bg, (0,0))
                 screen.blit(ball, rect.topleft) 
                 pg.display.update()
-
+##############################################################################################
 pg.quit()        
 
 
