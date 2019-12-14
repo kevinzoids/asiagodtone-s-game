@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
 
 import pygame as pg, random, math
 pg.init()
@@ -82,10 +80,4 @@ while running:
                 pg.display.update()
 ##############################################################################################
 pg.quit()        
-
-
-# In[ ]:
-
-
-
 
