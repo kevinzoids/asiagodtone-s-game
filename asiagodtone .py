@@ -17,9 +17,8 @@ bg.fill((255,255,255))
 bg.blit(font.render("Score: ", True, (0,0,0), (255,255,255)), (50,50))
 
 #亞統
-image = pg.image.load("德克斯特.jpg").convert()
-image = pg.transform.scale(image, (64,64))
-ball = image
+ball = pg.image.load("德克斯特.jpg").convert()
+ball = pg.transform.scale(ball, (64,64))
 rect = ball.get_rect()
 rect.center = (750,450)                 
 clock = pg.time.Clock()
@@ -58,7 +57,7 @@ while running:
     if playing == True:
         mouses = pg.mouse.get_pos()  #取得滑鼠坐標
         rect.centerx = mouses[0]     #移動滑鼠
-        rect.centery = mouses[1]
+        rect.centery = mouses[1]-30
         screen.blit(bg, (0,0))
         screen.blit(ball, rect.topleft)
         screen.blit(can, can_rect.topleft)
