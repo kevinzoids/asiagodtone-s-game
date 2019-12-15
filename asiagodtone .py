@@ -43,7 +43,7 @@ timerON = False
 timer = [pg.time.get_ticks(), pg.time.get_ticks()]
 timeUse = timer[-1] - timer[0]
 while running:
-    clock.tick(60)  #每秒執行30次
+    clock.tick(60)  #每秒執行60次
     for event in pg.event.get():
         if event.type == pg.QUIT:
             running = False
