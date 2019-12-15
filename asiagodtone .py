@@ -14,7 +14,8 @@ pg.display.set_caption("asiagodtone's game")
 bg = pg.Surface(screen.get_size())
 bg = bg.convert()
 bg.fill((255,255,255))
-bg.blit(font.render("Score: ", True, (0,0,0), (255,255,255)), (50,50))
+text = font.render("Press Left Click Button to start game!", True, (0,0,0), (255,255,255))
+bg.blit(text, (50,50))
 
 #亞統
 ball = pg.image.load("德克斯特.jpg").convert()
@@ -82,6 +83,9 @@ while running:
                     rect.centery = 888
                     score += 1
                     SCORE = "Score: " + str(score)
+                    text = font.render("Press Left Click Button to start game!", True, (255,255,255), (255,255,255))
+                    bg.blit(text, (50,50))
+                    screen.blit(bg, (0,0))
                     text = font.render(SCORE, True, (0,0,0), (255,255,255))
                     bg.blit(text, (50,50))
                     screen.blit(bg, (0,0))
