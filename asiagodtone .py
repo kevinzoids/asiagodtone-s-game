@@ -104,7 +104,7 @@ while running:
                 screen.blit(ball, rect.topleft)
                 screen.blit(can, can_rect.topleft)
                 pg.display.update() 
-                if rect.centery>887 and rect.centerx > can_rect.centerx-32 and rect.centerx < can_rect.centerx+32:
+                if rect.centery>887 and can_rect.centerx+32 > rect.centerx > can_rect.centerx-32:
                     stop = True
                     throwing = False
                     rect.centerx = mouses[0]
