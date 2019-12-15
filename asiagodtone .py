@@ -18,14 +18,14 @@ text = font.render("Press Left Click Button to start game!", True, (0,0,0), (255
 bg.blit(text, (50,50))
 
 #亞統
-ball = pg.image.load("C:\\Users\kevin\Desktop\德克斯特.jpg").convert()
+ball = pg.image.load("德克斯特.jpg").convert()
 ball = pg.transform.scale(ball, (64,64))
 rect = ball.get_rect()
 rect.center = (750,450)                 
 clock = pg.time.Clock()
 
 #trash can
-can = pg.image.load("C://Users/kevin/Desktop/trash_with_liner.jpg").convert()
+can = pg.image.load("trash_with_liner.jpg").convert()
 can = pg.transform.scale(can, (128,128))
 can_rect = can.get_rect()
 can_rect.center = (random.randint(100,850),856)
@@ -68,9 +68,9 @@ while running:
         #text = font.render("Press Left Click Button to start game!", True, (255,255,255), (255,255,255))
         bg.blit(text, (50,50))
         screen.blit(bg, (0,0))
-        SCORE = "Score: " + str(score)
+        SCORE = "Score: " + str(score) + " "
         text = font.render(SCORE, True, (0,0,0), (255,255,255))
-        TIME = font.render("Time: " + str(timeUse/1000)+" sec", True, (0,0,0), (255,255,255))
+        TIME = font.render("Time: " + str(timeUse/1000)+" sec  ", True, (0,0,0), (255,255,255))
         bg.blit(TIME, (50,150))
         bg.blit(text, (50,50))
         screen.blit(bg, (0,0))
@@ -110,12 +110,12 @@ while running:
                     rect.centerx = mouses[0]
                     rect.centery = 888
                     score += 1
-                    SCORE = "Score: " + str(score)
+                    SCORE = "Score: " + str(score) + " "
                     text = font.render("Press Left Click Button to start game!", True, (255,255,255), (255,255,255))
                     bg.blit(text, (50,50))
                     screen.blit(bg, (0,0))
                     text = font.render(SCORE, True, (0,0,0), (255,255,255))
-                    TIME = font.render("Time: " + str(timeUse/1000)+" sec", True, (0,0,0), (255,255,255))
+                    TIME = font.render("Time: " + str(timeUse/1000)+" sec  ", True, (0,0,0), (255,255,255))
                     bg.blit(TIME, (50,150))
                     bg.blit(text, (50,50))
                     screen.blit(bg, (0,0))
