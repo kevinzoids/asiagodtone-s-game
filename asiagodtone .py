@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
 
 
 import pygame as pg, random, math
@@ -18,7 +17,7 @@ bg.fill((255,255,255))
 bg.blit(font.render("Score: ", True, (0,0,0), (255,255,255)), (50,50))
 
 #亞統
-image = pg.image.load("C:\\Users\kevin\Desktop\德克斯特.jpg").convert()
+image = pg.image.load("德克斯特.jpg").convert()
 image = pg.transform.scale(image, (64,64))
 ball = image
 rect = ball.get_rect()
@@ -26,7 +25,7 @@ rect.center = (750,450)
 clock = pg.time.Clock()
 
 #trash can
-can = pg.image.load("C://Users/kevin/Desktop/trash_with_liner.jpg").convert()
+can = pg.image.load("trash_with_liner.jpg").convert()
 can = pg.transform.scale(can, (128,128))
 can_rect = can.get_rect()
 can_rect.center = (random.randint(100,850),856)
@@ -96,14 +95,6 @@ while running:
 
 pg.quit()        
 
-
-# In[15]:
-
-
-score
-
-
-# In[ ]:
 
 
 
